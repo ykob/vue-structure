@@ -4,6 +4,9 @@
 
 http://atomicdesign.bradfrost.com/chapter-2/
 
+Atomic Designが示す分類を見た目だけに当てはめて判断、分類すると、実際にVue Componentとして定義した際に、機能面での使いにくさや分類のわかりにくさを生む原因になる。  
+そこでAtomic Designが定義する5つの分類の階層や名前はそのまま、分類方法を機能面で判断することによって使いやすさやわかりやすさを担保していく。  
+
 ### Atoms
 
 - 他のAtoms要素をimportすることができる。
@@ -31,5 +34,6 @@ http://atomicdesign.bradfrost.com/chapter-2/
 
 ### Pages
 
+- ページの本文全体を指す。
 - Vue Routerのrouter-viewで直接制御する対象である。
 - 固有のdata、methodsを持つことができる。
