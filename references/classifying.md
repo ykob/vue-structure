@@ -12,7 +12,7 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 - 他のAtoms要素をimportすることができる。
 - 内包するコンポーネントが持つ機能の合計数が1つである。
 - 固有のdata、methodsを持つことができない。状態はpropsによって管理される。
-- propsを持たない要素はAtomsにすらせず、FLOCSSのcomponentやutilityとしてのみ定義する。
+- propsを持たない要素はAtomsにすらせず、FLOCSSのcomponentやutilityとして定義する。
 
 ### Molecules
 
