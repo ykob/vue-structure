@@ -38,3 +38,7 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 - ページの本文全体を指す。
 - Vue Routerのrouter-viewで直接制御する対象である。
 - 固有のdata、methodsを持つことができる。
+
+## 参考
+
+- [Extending Atomic Design](http://bradfrost.com/blog/post/extending-atomic-design/)
