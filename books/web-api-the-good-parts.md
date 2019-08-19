@@ -31,6 +31,28 @@ O'REILLY JAPAN
   - リソースの削除を行うDELETE
   - リソースの一部だけを更新したい場合に使うPATCH
 
+
+### 2.4 APIのエンドポイント設計
+
+|目的|エンドポイント|メソッド|
+|---|---|---|
+|ユーザー一覧取得|https://api.example.com/v1/users|GET|
+|ユーザーの新規登録|https://api.example.com/v1/users|POST|
+|特定のユーザーの情報の取得|https://api.example.com/v1/users/:id|GET|
+|ユーザーの情報の更新|https://api.example.com/v1/users/:id|PUT/PATCH|
+|ユーザーの情報の削除|https://api.example.com/v1/users/:id|DELETE|
+
+上記のエンドポイント設計でカバーできるのは以下のもの。
+
+- ユーザー登録
+- 自分の情報の取得
+- 自分の情報の更新
+- ユーザー情報の取得
+- ユーザーの検索
+
+APIとしては5つになっているが、エンドポイントは2つだけ。  
+ユーザーの検索は、ユーザー一覧の取得APIに対してクエリパラメータで絞り込みを行うことで実現する。  
+
 ## 3章 レスポンスデータの設計
 
 ### 3.3.4 配列とフォーマット
