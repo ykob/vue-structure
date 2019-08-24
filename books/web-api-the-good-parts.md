@@ -85,7 +85,17 @@ SSKDsとAPIデザイン向けのAPIであっても、汎用的でわかりやす
 - REST LEVEL0 - HTTPを使っている
 - REST LEVEL1 - リソースの概念を導入している
 - REST LEVEL2 - HTTPの動詞（GET/POST/PUT/DELETE）を導入している
-- REST LEVEL3 - HATEOASの概念を導入している。
+- REST LEVEL3 - HATEOASの概念を導入している
+
+HATEOAS（Hypermedia As The Engine Of Application State）  
+リンクによって複数のメディアをつなげたものであり、この場合にはAPIで扱われるリソースを意味する。
+
+### 2.10 まとめ
+
+- 覚えやすく、どんな機能を持つかがひと目でわかるエンドポイントにする。
+- 適切なHTTPメソッドを利用する。
+- 適切な英単語を利用し、単数形、複数形にも注意する。
+- 認証にはOAuth2.0を使う。
 
 ## 3章 レスポンスデータの設計
 
