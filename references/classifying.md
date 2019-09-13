@@ -18,6 +18,7 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 ### Atoms
 
 - 他のAtoms要素をimportすることができる。
+  - 逆に言えば他のAtoms要素をimportしているというだけではMoleculesにしない。
 - 内包するコンポーネントが持つ機能の合計数が1つである。
 - 固有のdata、methodsを持つことができない。状態や機能はpropsによって渡される。
 
