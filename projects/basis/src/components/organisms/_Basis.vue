@@ -2,7 +2,12 @@
   export default {
     name: 'Organism',
     components: {},
-    props: {},
+    props: {
+      propA: {
+        Type: String,
+        default: '',
+      },
+    },
     data: function() {
       return {}
     },

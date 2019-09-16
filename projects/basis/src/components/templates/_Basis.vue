@@ -2,7 +2,12 @@
   export default {
     name: 'Template',
     components: {},
-    props: {},
+    props: {
+      propA: {
+        Type: String,
+        default: '',
+      },
+    },
     data: function() {
       return {}
     },

@@ -2,7 +2,12 @@
   export default {
     name: 'Atom',
     components: {},
-    props: {}
+    props: {
+      propA: {
+        Type: String,
+        default: '',
+      },
+    }
   };
 </script>
 
