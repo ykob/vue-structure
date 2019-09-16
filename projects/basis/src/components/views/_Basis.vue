@@ -1,8 +1,13 @@
 <script>
   export default {
-    name: 'Page',
+    name: 'View',
     components: {},
-    props: {},
+    props: {
+      propA: {
+        Type: String,
+        default: '',
+      },
+    },
     data: function() {
       return {}
     },
