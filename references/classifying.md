@@ -32,7 +32,8 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 
 ### Organisms
 
-- Atoms、Molecules、他のOrganisms要素をimportすることができる。必ずしもMolecules要素を含んでいる必要はない。
+- Atoms、Molecules、他のOrganisms要素をimportすることができる。
+  - 必ずしもMolecules要素を含んでいる必要はない。
 - 内包するコンポーネントが持つeventの数に制限はない。
 - 固有のdata、methodsを持つことができる。
 - グローバルな要素ではない。
@@ -41,7 +42,8 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 
 ### Templates
 
-- Atoms、Molecules、Organisms要素をimportすることができる。必ずしもMolecules、Organisms要素を含んでいる必要はない。
+- Atoms、Molecules、Organisms要素をimportすることができる。
+  - 必ずしもMolecules、Organisms要素を含んでいる必要はない。
 - 内包するコンポーネントが持つeventの数に制限はない。
 - 固有のdata、methodsを持つことができる。
 - グローバルな要素である。
