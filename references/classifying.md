@@ -12,8 +12,8 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 - Atomic Designの原典には存在しない、独自拡張の分類。
 - Atoms未満の粒度であり、単純なHTMLとCSSでのみ構成される。
 - propsをまったく持たない。
+    - この要素の状態の変化はFLOCSSのmodifilerで管理、制御する。
 - Vue Componentにする必要がないため、FLOCSSのcomponentやutilityなどとして定義する。
-- この要素の状態の変化はFLOCSSのmodifilerで管理、制御する。
 
 ### Atoms
 
