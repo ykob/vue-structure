@@ -48,9 +48,10 @@ Atomic Designが示す分類を見た目だけに当てはめて判断、分類�
 - 固有のdata、methodsを持つことができる。
 - グローバルな要素である。
 
-### Pages
+### Views(Pages)
 
 - ページの本文全体を指す。
+- Atomic Design上の命名はPagesだが、ViewsにすることでAtomsからViewsまでのアルファベットが昇順になり、ディレクトリの順番がAtomic Designの粒度の順番と一致し一覧性が向上するため、Viewsと改名する。
 - Vue Routerのrouter-viewで直接制御する対象である。
 - 固有のdata、methodsを持つことができる。
 
