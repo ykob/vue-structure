@@ -19,11 +19,11 @@
         this.tag,
         {
           class: {
-            'p-button': true,
-            'p-button--submit': this.role === 'submit',
-            'p-button--cancel': this.role === 'cancel',
-            'p-button--delete': this.role === 'delete',
-            'p-button--link': this.role === 'link',
+            'c-button': true,
+            'c-button--submit': this.role === 'submit',
+            'c-button--cancel': this.role === 'cancel',
+            'c-button--delete': this.role === 'delete',
+            'c-button--link': this.role === 'link',
           },
           on: {
             click: function (event) {
@@ -44,7 +44,7 @@
 </script>
 
 <style lang="scss">
-  .p-button {
+  .c-button {
     &--submit {}
     &--cancel {}
     &--delete {}
