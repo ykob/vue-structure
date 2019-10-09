@@ -1,38 +1,43 @@
 <script>
+  import Checkbox from './Checkbox.vue'
+
   export default {
     name: 'CheckboxHasLabel',
-    components: {},
+    components: {
+      Checkbox,
+    },
     props: {
-      id: {
-        Type: String,
-        default: '',
+      state: {
+        Type: Number,
+        default: 0,
       },
-      value: {
-        Type: String,
-        default: '',
+    },
+    methods: {
+      click: function() {
+        this.$emit('click');
       },
-      label: {
-        Type: String,
-        default: '',
-      },
-    }
+    },
   };
 </script>
 
 <template lang="pug">
-  .c-checkbox-has-label
-    input(
-      type = 'checkbox'
-      :id = 'id'
-      :value = 'value'
+  .c-checkbox-has-label(
+    @click = 'click'
+    )
+    Checkbox.c-checkbox-has-label__icon(
+      tag = 'div'
+      :state = 'state'
       )
-    label(
-      :for = 'id'
-      )
-      |{{ label }}
+    slot
 </template>
 
 <style lang="scss">
   .c-checkbox-has-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &__icon {
+      margin-right: 8px;
+    }
   }
 </style>

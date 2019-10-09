@@ -3,13 +3,9 @@
     name: 'Checkbox',
     components: {},
     props: {
-      id: {
+      tag: {
         Type: String,
-        default: '',
-      },
-      value: {
-        Type: String,
-        default: '',
+        default: 'button',
       },
       state: {
         Type: Number,
@@ -33,9 +29,8 @@
 </script>
 
 <template lang="pug">
-  button.c-checkbox(
-    :id = 'id'
-    :value = 'value'
+  .c-checkbox(
+    :is = 'tag'
     :class = 'classnames'
     @click = 'click'
     )
