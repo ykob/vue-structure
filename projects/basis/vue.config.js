@@ -1,0 +1,9 @@
+{
+  pluginOptions: {
+    storybook: {
+      allowedPlugins: [
+        'define'
+      ]
+    }
+  }
+}
