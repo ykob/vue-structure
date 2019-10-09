@@ -1,5 +1,5 @@
 <script>
-  import Checkbox from './Checkbox.vue'
+  import Checkbox from '@/components/atoms/Checkbox.vue'
 
   export default {
     name: 'CheckboxHasLabel',

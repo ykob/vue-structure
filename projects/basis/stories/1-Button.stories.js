@@ -1,7 +1,7 @@
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import Button from '../src/components/atoms/Button.vue';
+import Button from '@/components/atoms/Button.vue';
 
 export default {
   title: 'Button',

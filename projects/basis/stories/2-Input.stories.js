@@ -1,8 +1,8 @@
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
 
-import Checkbox from '../src/components/atoms/Checkbox.vue';
-import CheckboxHasLabel from '../src/components/atoms/CheckboxHasLabel.vue';
+import Checkbox from '@/components/atoms/Checkbox.vue';
+import CheckboxHasLabel from '@/components/atoms/CheckboxHasLabel.vue';
 
 export default {
   title: 'Input',
