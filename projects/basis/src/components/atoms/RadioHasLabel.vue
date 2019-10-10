@@ -1,38 +1,43 @@
 <script>
+  import Radio from '@/components/atoms/Radio.vue'
+
   export default {
     name: 'RadioHasLabel',
-    components: {},
+    components: {
+      Radio,
+    },
     props: {
-      id: {
-        Type: String,
-        default: '',
+      isChecked: {
+        Type: Boolean,
+        default: false,
       },
-      value: {
-        Type: String,
-        default: '',
+    },
+    methods: {
+      click: function(event) {
+        this.$emit('click', event);
       },
-      label: {
-        Type: String,
-        default: '',
-      },
-    }
+    },
   };
 </script>
 
 <template lang="pug">
-  .c-radio-has-label
-    input(
-      type = 'radio'
-      :id = 'id'
-      :value = 'value'
+  .c-radio-has-label(
+    @click = 'click'
+    )
+    Radio.c-radio-has-label__icon(
+      tag = 'div'
+      :state = 'state'
       )
-    label(
-      :for = 'id'
-      )
-      |{{ label }}
+    slot
 </template>
 
 <style lang="scss">
   .c-radio-has-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &__icon {
+      margin-right: 8px;
+    }
   }
 </style>
