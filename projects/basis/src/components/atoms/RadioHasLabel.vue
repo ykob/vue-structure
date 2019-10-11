@@ -26,7 +26,7 @@
     )
     Radio.c-radio-has-label__icon(
       tag = 'div'
-      :state = 'state'
+      :isChecked = 'isChecked'
       )
     slot
 </template>
