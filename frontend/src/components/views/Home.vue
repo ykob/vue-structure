@@ -1,6 +1,6 @@
 <script>
   export default {
-    name: 'App',
+    name: 'Home',
     components: {},
     props: {},
     data: function() {
@@ -11,9 +11,10 @@
 </script>
 
 <template lang="pug">
-  div
-    router-view
+  .p-page
 </template>
 
 <style lang="scss">
+  .p-page {
+  }
 </style>

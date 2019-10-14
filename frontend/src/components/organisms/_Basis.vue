@@ -1,8 +1,13 @@
 <script>
   export default {
-    name: 'App',
+    name: 'Organism',
     components: {},
-    props: {},
+    props: {
+      propA: {
+        Type: String,
+        default: '',
+      },
+    },
     data: function() {
       return {}
     },
@@ -11,9 +16,10 @@
 </script>
 
 <template lang="pug">
-  div
-    router-view
+  .p-organism
 </template>
 
 <style lang="scss">
+  .p-organism {
+  }
 </style>
