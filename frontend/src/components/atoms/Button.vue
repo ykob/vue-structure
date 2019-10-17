@@ -12,6 +12,10 @@
         type: String,
         default: 'submit',
       },
+      width: {
+        type: String,
+        default: '120px',
+      },
     },
     render: function (createElement) {
       const self = this;
@@ -23,7 +27,10 @@
             'c-button--submit': this.role === 'submit',
             'c-button--cancel': this.role === 'cancel',
             'c-button--delete': this.role === 'delete',
-            'c-button--link': this.role === 'link',
+            'c-button--link'  : this.role === 'link',
+          },
+          style: {
+            width: this.width,
           },
           on: {
             click: function (event) {
@@ -45,9 +52,36 @@
 
 <style lang="scss">
   .c-button {
-    &--submit {}
-    &--cancel {}
-    &--delete {}
-    &--link {}
+    height: 40px;
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-top: 0;
+    border-bottom: 2px solid;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    &--submit {
+      color: map-get($colors, 'mono-white');
+      border-bottom-color: map-get($colors, 'success-dark');
+      background-color: map-get($colors, 'success-normal');
+    }
+    &--cancel {
+      border-bottom-color: map-get($colors, 'mono-light-m2');
+      background-color: map-get($colors, 'mono-light');
+    }
+    &--delete {
+      color: map-get($colors, 'mono-white');
+      border-bottom-color: map-get($colors, 'error-dark');
+      background-color: map-get($colors, 'error-normal');
+    }
+    &--link {
+      border-bottom-color: map-get($colors, 'link-dark');
+      background-color: map-get($colors, 'link-normal');
+    }
   }
 </style>
