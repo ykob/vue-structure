@@ -6,7 +6,17 @@ module.exports = {
         use: [
           'vue-style-loader',
           'css-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                importLoaders: 0,
+                alias: {
+                  'assets': path.resolve(__dirname, '../src/assets')
+                }
+              }
+            }
+          }
         ]
       },
       {
