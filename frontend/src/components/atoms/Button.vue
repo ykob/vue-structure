@@ -24,10 +24,11 @@
         {
           class: {
             'c-button': true,
-            'c-button--submit': this.role === 'submit',
-            'c-button--cancel': this.role === 'cancel',
-            'c-button--delete': this.role === 'delete',
-            'c-button--link'  : this.role === 'link',
+            'c-button--submit' : this.role === 'submit',
+            'c-button--cancel' : this.role === 'cancel',
+            'c-button--warning': this.role === 'warning',
+            'c-button--delete' : this.role === 'delete',
+            'c-button--link'   : this.role === 'link',
           },
           style: {
             width: this.width,
@@ -71,8 +72,14 @@
       background-color: map-get($colors, 'success-normal');
     }
     &--cancel {
+      color: map-get($colors, 'mono-normal');
       border-bottom-color: map-get($colors, 'mono-light-m2');
       background-color: map-get($colors, 'mono-light');
+    }
+    &--warning {
+      color: map-get($colors, 'mono-white');
+      border-bottom-color: map-get($colors, 'warning-dark');
+      background-color: map-get($colors, 'warning-normal');
     }
     &--delete {
       color: map-get($colors, 'mono-white');
@@ -80,6 +87,7 @@
       background-color: map-get($colors, 'error-normal');
     }
     &--link {
+      color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'link-dark');
       background-color: map-get($colors, 'link-normal');
     }

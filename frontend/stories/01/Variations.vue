@@ -48,6 +48,12 @@
       Button.button(
         @click = 'action'
         value = 'value'
+        role = 'warning'
+        )
+        |Warning
+      Button.button(
+        @click = 'action'
+        value = 'value'
         role = 'delete'
         )
         |Delete
