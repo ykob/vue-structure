@@ -30,12 +30,40 @@
 
 <template lang="pug">
   div
-    Button(
-      @click = 'action'
-      value = 'value'
-      )
-      |Button
+    h1
+      |Button Variations
+    .buttons
+      Button.button(
+        @click = 'action'
+        value = 'value'
+        role = 'submit'
+        )
+        |Submit
+      Button.button(
+        @click = 'action'
+        value = 'value'
+        role = 'cancel'
+        )
+        |Cancel
+      Button.button(
+        @click = 'action'
+        value = 'value'
+        role = 'delete'
+        )
+        |Delete
+      Button.button(
+        tag = 'a'
+        href = '#'
+        target = '_blank'
+        @click = 'action'
+        value = 'value'
+        role = 'link'
+        )
+        |Link
 </template>
 
 <style lang="scss" scope>
+  .button {
+    margin-right: 8px;
+  }
 </style>

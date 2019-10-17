@@ -1,7 +1,7 @@
-import Pattern from '~/01/Pattern.vue';
+import Variations from '~/01/Variations.vue';
 
 export default {
   title: 'Button',
 };
 
-export const pattern = () => Pattern;
+export const variations = () => Variations;
