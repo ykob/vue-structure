@@ -69,27 +69,27 @@
     &--submit {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'success-dark');
-      background-color: map-get($colors, 'success-normal');
+      background-color: map-get($colors, 'success-medium');
     }
     &--cancel {
-      color: map-get($colors, 'mono-normal');
+      color: map-get($colors, 'mono-medium');
       border-bottom-color: map-get($colors, 'mono-light-m2');
       background-color: map-get($colors, 'mono-light');
     }
     &--warning {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'warning-dark');
-      background-color: map-get($colors, 'warning-normal');
+      background-color: map-get($colors, 'warning-medium');
     }
     &--delete {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'error-dark');
-      background-color: map-get($colors, 'error-normal');
+      background-color: map-get($colors, 'error-medium');
     }
     &--link {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'link-dark');
-      background-color: map-get($colors, 'link-normal');
+      background-color: map-get($colors, 'link-medium');
     }
   }
 </style>
