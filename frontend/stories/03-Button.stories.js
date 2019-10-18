@@ -1,4 +1,4 @@
-import Variations from '~/01/Variations.vue';
+import Variations from '~/03/Variations.vue';
 
 export default {
   title: 'Button',
