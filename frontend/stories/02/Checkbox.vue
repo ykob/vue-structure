@@ -30,8 +30,10 @@
 
 <template lang="pug">
   div
-    div
-      |checkState: {{ showCheckState }}
+    h1
+      |Checkbox
+    p
+      |checkbox state: {{ showCheckState }}
     Checkbox(
       :state = 'checkState'
       id = 'checkbox'

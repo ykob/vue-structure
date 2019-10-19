@@ -29,7 +29,9 @@
 
 <template lang="pug">
   div
-    div
+    h1
+      |Selectbox
+    p
       |selected: {{ selected }}
     Select(
       :selected = 'selected'

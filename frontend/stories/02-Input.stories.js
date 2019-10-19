@@ -1,5 +1,5 @@
 import Checkbox from '~/02/Checkbox.vue';
-import MultipleCheckbox from '~/02/MultipleCheckbox.vue';
+import MultipleCheckboxes from '~/02/MultipleCheckboxes.vue';
 import Radio from '~/02/Radio.vue';
 import Select from '~/02/Select.vue';
 
@@ -8,6 +8,6 @@ export default {
 };
 
 export const checkbox = () => Checkbox;
-export const multipleCheckbox = () => MultipleCheckbox;
+export const multipleCheckboxes = () => MultipleCheckboxes;
 export const radio = () => Radio;
 export const select = () => Select;

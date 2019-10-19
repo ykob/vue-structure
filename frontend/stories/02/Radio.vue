@@ -29,7 +29,9 @@
 
 <template lang="pug">
   div
-    div
+    h1
+      |Radio
+    p
       |checked: {{ checked }}
     .items
       .item(

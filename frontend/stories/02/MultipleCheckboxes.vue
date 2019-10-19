@@ -35,8 +35,9 @@
 
 <template lang="pug">
   div
-    div
-      |selected: {{ showSelectedItems }}
+    h1 Multiple Checkboxes
+    p
+      |checked IDs: {{ showSelectedItems }}
     .items
       .item(
         v-for = 'item, index in items'
