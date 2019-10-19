@@ -12,7 +12,6 @@ module.exports = {
             loader: 'sass-loader',
             options: {
               sassOptions: {
-                importLoaders: 0,
                 alias: {
                   'assets': path.resolve(__dirname, '../src/assets')
                 }
