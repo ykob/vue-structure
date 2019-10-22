@@ -43,8 +43,8 @@
       )
     .c-checkbox__label(
       v-if = 'label'
+      v-html = 'label'
       )
-      |{{ label }}
 </template>
 
 <style lang="scss">
