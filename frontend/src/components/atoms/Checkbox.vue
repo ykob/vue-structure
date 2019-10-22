@@ -11,6 +11,10 @@
         Type: Number,
         default: 0,
       },
+      label: {
+        type: String,
+        default: ''
+      },
     },
     computed: {
       classnames: function() {
@@ -34,45 +38,63 @@
     :class = 'classnames'
     @click = 'click'
     )
+    .c-checkbox__icon(
+      :class = 'classnames'
+      )
+    .c-checkbox__label(
+      v-if = 'label'
+      )
+      |{{ label }}
 </template>
 
 <style lang="scss">
   .c-checkbox {
-    width: 24px;
-    height: 24px;
-    box-sizing: border-box;
     cursor: pointer;
-    display: inline-block;
-    position: relative;
+    display: flex;
+    align-items: center;
     padding: 0;
-    border: 2px solid #444;
-    border-radius: 4px;
-    background-color: #fff;
-    &:before, &:after {
-      width: 12px;
-      height: 2px;
-      content: '';
-      display: block;
-      position: absolute;
-      top: calc(50% - 1px);
-      left: calc(50% - 6px);
-      opacity: 0;
+    border: 0;
+    background: none;
+    &__icon {
+      width: 24px;
+      height: 24px;
+      box-sizing: border-box;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      padding: 0;
+      border: 2px solid #444;
+      border-radius: 4px;
       background-color: #fff;
-    }
-    &:after {
-      transform: rotate(-45deg);
-    }
-    &.is-checked {
-      background-color: #444;
+      &:before, &:after {
+        width: 12px;
+        height: 2px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: calc(50% - 1px);
+        left: calc(50% - 6px);
+        opacity: 0;
+        background-color: #fff;
+      }
       &:after {
-        opacity: 1;
+        transform: rotate(-45deg);
+      }
+      &.is-checked {
+        background-color: #444;
+        &:after {
+          opacity: 1;
+        }
+      }
+      &.is-checked-part {
+        background-color: #444;
+        &:before {
+          opacity: 1;
+        }
       }
     }
-    &.is-checked-part {
-      background-color: #444;
-      &:before {
-        opacity: 1;
-      }
+    &__label {
+      margin-left: 8px;
     }
   }
 </style>

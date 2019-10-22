@@ -1,9 +1,9 @@
 <script>
-  import CheckboxHasLabel from '@/components/atoms/CheckboxHasLabel.vue';
+  import Checkbox from '@/components/atoms/Checkbox.vue';
 
   export default {
     components: {
-      CheckboxHasLabel,
+      Checkbox,
     },
     data: function() {
       return {
@@ -42,11 +42,11 @@
       .item(
         v-for = 'item, index in items'
         )
-        CheckboxHasLabel(
+        Checkbox(
           :state = 'item.state'
+          :label = 'item.label'
           @click = 'click(index)'
           )
-          |{{ item.label }}
 </template>
 
 <style lang="scss" scope>
