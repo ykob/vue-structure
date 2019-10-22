@@ -1,9 +1,9 @@
 <script>
-  import RadioHasLabel from '@/components/atoms/RadioHasLabel.vue';
+  import Radio from '@/components/atoms/Radio.vue';
 
   export default {
     components: {
-      RadioHasLabel,
+      Radio,
     },
     data: function() {
       return {
@@ -37,11 +37,11 @@
       .item(
         v-for = 'item, index in items'
         )
-        RadioHasLabel(
+        Radio(
           :isChecked = 'item.value === checked'
+          :label = 'item.label'
           @click = 'click(index)'
           )
-          |{{ item.label }}
 </template>
 
 <style lang="scss" scope>
