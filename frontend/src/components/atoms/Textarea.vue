@@ -12,7 +12,9 @@
 </script>
 
 <template lang="pug">
-  textarea.c-textarea
+  textarea.c-textarea(
+    cols = '40'
+    rows = '6'
 </template>
 
 <style lang="scss">
