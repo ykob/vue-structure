@@ -55,6 +55,7 @@
   .c-button {
     height: 40px;
     box-sizing: border-box;
+    cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +82,7 @@
       border-bottom-color: map-get($colors, 'mono-light-m2');
       background-color: map-get($colors, 'mono-light');
       &:hover {
-        background-color: lighten(map-get($colors, 'mono-light'), 10%);
+        background-color: lighten(map-get($colors, 'mono-light'), 3%);
       }
     }
     &--warning {
