@@ -66,30 +66,47 @@
     border-radius: 4px;
     text-decoration: none;
     letter-spacing: 0.1em;
+    transition-duration: .2s;
+    transition-property: background-color;
     &--submit {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'success-dark');
       background-color: map-get($colors, 'success-medium');
+      &:hover {
+        background-color: lighten(map-get($colors, 'success-medium'), 10%);
+      }
     }
     &--cancel {
       color: map-get($colors, 'mono-medium');
       border-bottom-color: map-get($colors, 'mono-light-m2');
       background-color: map-get($colors, 'mono-light');
+      &:hover {
+        background-color: lighten(map-get($colors, 'mono-light'), 10%);
+      }
     }
     &--warning {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'warning-dark');
       background-color: map-get($colors, 'warning-medium');
+      &:hover {
+        background-color: lighten(map-get($colors, 'warning-medium'), 10%);
+      }
     }
     &--delete {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'error-dark');
       background-color: map-get($colors, 'error-medium');
+      &:hover {
+        background-color: lighten(map-get($colors, 'error-medium'), 10%);
+      }
     }
     &--link {
       color: map-get($colors, 'mono-white');
       border-bottom-color: map-get($colors, 'link-dark');
       background-color: map-get($colors, 'link-medium');
+      &:hover {
+        background-color: lighten(map-get($colors, 'link-medium'), 10%);
+      }
     }
   }
 </style>
