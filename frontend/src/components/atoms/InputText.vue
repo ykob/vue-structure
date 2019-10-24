@@ -15,5 +15,7 @@
 
 <style lang="scss">
   .c-input-text {
+    box-sizing: border-box;
+    padding: .5em;
   }
 </style>

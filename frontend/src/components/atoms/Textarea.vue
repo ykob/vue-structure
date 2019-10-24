@@ -15,9 +15,12 @@
   textarea.c-textarea(
     cols = '40'
     rows = '6'
+    )
 </template>
 
 <style lang="scss">
   .c-textarea {
+    box-sizing: border-box;
+    padding: .5em;
   }
 </style>
