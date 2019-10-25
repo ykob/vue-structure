@@ -71,7 +71,7 @@
     transition-property: background-color;
     &--submit {
       color: map-get($colors, 'wb-white');
-      border-bottom-color: map-get($colors, 'success-dark');
+      border-bottom-color: darken(map-get($colors, 'success-medium'), 15%);
       background-color: map-get($colors, 'success-medium');
       &:hover {
         background-color: lighten(map-get($colors, 'success-medium'), 10%);
@@ -79,15 +79,15 @@
     }
     &--cancel {
       color: map-get($colors, 'wb-medium');
-      border-bottom-color: map-get($colors, 'wb-light-m2');
-      background-color: map-get($colors, 'wb-light');
+      border-bottom-color: darken(map-get($colors, 'wb-light-m1'), 15%);
+      background-color: map-get($colors, 'wb-light-m1');
       &:hover {
-        background-color: lighten(map-get($colors, 'wb-light'), 3%);
+        background-color: lighten(map-get($colors, 'wb-light-m1'), 5%);
       }
     }
     &--warning {
-      color: map-get($colors, 'wb-white');
-      border-bottom-color: map-get($colors, 'warning-dark');
+      color: map-get($colors, 'wb-dark');
+      border-bottom-color: darken(map-get($colors, 'warning-medium'), 15%);
       background-color: map-get($colors, 'warning-medium');
       &:hover {
         background-color: lighten(map-get($colors, 'warning-medium'), 10%);
@@ -95,7 +95,7 @@
     }
     &--delete {
       color: map-get($colors, 'wb-white');
-      border-bottom-color: map-get($colors, 'error-dark');
+      border-bottom-color: darken(map-get($colors, 'error-medium'), 15%);
       background-color: map-get($colors, 'error-medium');
       &:hover {
         background-color: lighten(map-get($colors, 'error-medium'), 10%);
@@ -103,7 +103,7 @@
     }
     &--link {
       color: map-get($colors, 'wb-white');
-      border-bottom-color: map-get($colors, 'link-dark');
+      border-bottom-color: darken(map-get($colors, 'link-medium'), 15%);
       background-color: map-get($colors, 'link-medium');
       &:hover {
         background-color: lighten(map-get($colors, 'link-medium'), 10%);

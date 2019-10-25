@@ -23,6 +23,11 @@
             'wb-dark'    : 'White&Black Dark',
           },
           {
+            'info-light' : 'Information Color Light',
+            'info-medium': 'Information Color Medium',
+            'info-dark'  : 'Information Color Dark',
+          },
+          {
             'link-light' : 'Link Color Light',
             'link-medium': 'Link Color Medium',
             'link-dark'  : 'Link Color Dark',

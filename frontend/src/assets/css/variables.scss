@@ -1,33 +1,41 @@
 $colors: (
-  key-light      : #BAC9E4,
-  key-medium     : #245BD3,
-  key-dark       : #33138B,
+  prime-light    : #B2EBF2,
+  prime-medium   : #26C6DA,
+  prime-dark     : #00838F,
+
+  second-light   : #B2DFDB,
+  second-medium  : #26A69A,
+  second-dark    : #00695C,
 
   text           : #333333,
   bg             : #FFFFFF,
 
   wb-white       : #FFFFFF,
-  wb-light       : #EAECEE,
-  wb-light-m1    : #D5D8DC,
-  wb-light-m2    : #ABB2B9,
-  wb-medium      : #566573,
-  wb-dark        : #1C2833,
+  wb-light       : #F5F5F5,
+  wb-light-m1    : #E0E0E0,
+  wb-light-m2    : #BDBDBD,
+  wb-medium      : #757575,
+  wb-dark        : #424242,
 
-  link-light     : #E8DAEF,
-  link-medium    : #A569BD,
-  link-dark      : #6C3483,
+  info-light     : #90CAF9,
+  info-medium    : #2196F3,
+  info-dark      : #1565C0,
 
-  success-light  : #D5F5E3,
-  success-medium : #58D68D,
-  success-dark   : #239B56,
+  link-light     : #E1BEE7,
+  link-medium    : #AB47BC,
+  link-dark      : #6A1B9A,
 
-  warning-light  : #FCF3CF,
-  warning-medium : #F4D03F,
-  warning-dark   : #B7950B,
+  success-light  : #C8E6C9,
+  success-medium : #66BB6A,
+  success-dark   : #2E7D32,
 
-  error-light    : #FADBD8,
-  error-medium   : #EC7063,
-  error-dark     : #943126,
+  warning-light  : #FFECB3,
+  warning-medium : #FFCA28,
+  warning-dark   : #FF8F00,
+
+  error-light    : #FFCDD2,
+  error-medium   : #EF5350,
+  error-dark     : #B71C1C,
 );
 
 
