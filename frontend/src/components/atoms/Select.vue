@@ -3,10 +3,6 @@
     name: 'Select',
     components: {},
     props: {
-      name: {
-        type: String,
-        default: ''
-      },
       items: {
         Type: Array,
         default: [],
@@ -22,7 +18,7 @@
 
 <template lang="pug">
   select.c-select(
-    :name = 'name'
+    name = ''
     @change = 'change'
     )
     option(
