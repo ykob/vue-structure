@@ -66,6 +66,12 @@
         role = 'link'
         )
         |Link
+      Button.button(
+        value = 'value'
+        role = 'submit'
+        :disabled = 'true'
+        )
+        |Disabled
 </template>
 
 <style lang="scss" scope>

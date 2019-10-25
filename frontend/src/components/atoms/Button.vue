@@ -109,5 +109,11 @@
         background-color: lighten(map-get($colors, 'link-medium'), 10%);
       }
     }
+    &:disabled {
+      cursor: auto;
+      color: map-get($colors, 'wb-light-m1');
+      border-bottom-color: darken(map-get($colors, 'wb-light'), 5%);
+      background-color: map-get($colors, 'wb-light');
+    }
   }
 </style>
