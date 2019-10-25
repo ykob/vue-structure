@@ -15,12 +15,12 @@
             'bg'  : 'Background Color',
           },
           {
-            'mono-white'   : 'Monochrome White',
-            'mono-light'   : 'Monochrome Light',
-            'mono-light-m1': 'Monochrome Medium Light 1',
-            'mono-light-m2': 'Monochrome Medium Light 2',
-            'mono-medium'  : 'Monochrome Medium',
-            'mono-dark'    : 'Monochrome Dark',
+            'wb-white'   : 'White&Black White',
+            'wb-light'   : 'White&Black Light',
+            'wb-light-m1': 'White&Black Medium Light 1',
+            'wb-light-m2': 'White&Black Medium Light 2',
+            'wb-medium'  : 'White&Black Medium',
+            'wb-dark'    : 'White&Black Dark',
           },
           {
             'link-light' : 'Link Color Light',

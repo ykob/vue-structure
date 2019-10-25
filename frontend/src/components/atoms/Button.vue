@@ -70,7 +70,7 @@
     transition-duration: .2s;
     transition-property: background-color;
     &--submit {
-      color: map-get($colors, 'mono-white');
+      color: map-get($colors, 'wb-white');
       border-bottom-color: map-get($colors, 'success-dark');
       background-color: map-get($colors, 'success-medium');
       &:hover {
@@ -78,15 +78,15 @@
       }
     }
     &--cancel {
-      color: map-get($colors, 'mono-medium');
-      border-bottom-color: map-get($colors, 'mono-light-m2');
-      background-color: map-get($colors, 'mono-light');
+      color: map-get($colors, 'wb-medium');
+      border-bottom-color: map-get($colors, 'wb-light-m2');
+      background-color: map-get($colors, 'wb-light');
       &:hover {
-        background-color: lighten(map-get($colors, 'mono-light'), 3%);
+        background-color: lighten(map-get($colors, 'wb-light'), 3%);
       }
     }
     &--warning {
-      color: map-get($colors, 'mono-white');
+      color: map-get($colors, 'wb-white');
       border-bottom-color: map-get($colors, 'warning-dark');
       background-color: map-get($colors, 'warning-medium');
       &:hover {
@@ -94,7 +94,7 @@
       }
     }
     &--delete {
-      color: map-get($colors, 'mono-white');
+      color: map-get($colors, 'wb-white');
       border-bottom-color: map-get($colors, 'error-dark');
       background-color: map-get($colors, 'error-medium');
       &:hover {
@@ -102,7 +102,7 @@
       }
     }
     &--link {
-      color: map-get($colors, 'mono-white');
+      color: map-get($colors, 'wb-white');
       border-bottom-color: map-get($colors, 'link-dark');
       background-color: map-get($colors, 'link-medium');
       &:hover {
