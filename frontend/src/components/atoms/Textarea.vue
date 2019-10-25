@@ -1,33 +1,57 @@
 <script>
   export default {
-    name: 'InputText',
+    name: 'Textarea',
     components: {},
     props: {
-      propA: {
-        Type: String,
-        default: '',
+      value: {
+        type: String,
+        value: ''
       },
-    }
+      hasError: {
+        type: Boolean,
+        value: false
+      },
+    },
+    computed: {
+      classnames: function() {
+        return {
+          'has-error': this.hasError === true,
+        }
+      },
+    },
   };
 </script>
 
 <template lang="pug">
   textarea.c-textarea(
+    name = ''
     cols = '40'
     rows = '6'
+    :class = 'classnames'
     )
+    |{{ value }}
 </template>
 
 <style lang="scss">
   .c-textarea {
     box-sizing: border-box;
-    padding: calc(.5em - 1px);
+    line-height: 1.5;
+    padding: calc(.5em);
     border: 1px solid map-get($colors, 'wb-light-m2');
     border-radius: 4px;
     &:focus {
       outline: 0;
-      padding: calc(.5em - 2px);
+      padding: calc(.5em - 1px);
       border: 2px solid map-get($colors, 'info-medium');
+    }
+    &:disabled {
+      color: map-get($colors, 'wb-medium');
+      background-color: map-get($colors, 'wb-light');
+    }
+    &.has-error {
+      padding: calc(.5em - 1px);
+      border: 2px solid map-get($colors, 'error-medium');
+      background-color: map-get($colors, 'error-light');
     }
   }
 </style>
