@@ -72,6 +72,9 @@
       &:hover {
         background-color: lighten(map-get($colors, 'success-medium'), 10%);
       }
+      &:active {
+        background-color: darken(map-get($colors, 'success-medium'), 10%);
+      }
     }
     &--cancel {
       color: map-get($colors, 'wb-medium');
@@ -79,6 +82,9 @@
       background-color: map-get($colors, 'wb-light-m1');
       &:hover {
         background-color: lighten(map-get($colors, 'wb-light-m1'), 5%);
+      }
+      &:active {
+        background-color: darken(map-get($colors, 'wb-light-m1'), 10%);
       }
     }
     &--warning {
@@ -88,6 +94,9 @@
       &:hover {
         background-color: lighten(map-get($colors, 'warning-medium'), 10%);
       }
+      &:active {
+        background-color: darken(map-get($colors, 'warning-medium'), 10%);
+      }
     }
     &--delete {
       color: map-get($colors, 'wb-white');
@@ -96,6 +105,9 @@
       &:hover {
         background-color: lighten(map-get($colors, 'error-medium'), 10%);
       }
+      &:active {
+        background-color: darken(map-get($colors, 'error-medium'), 10%);
+      }
     }
     &--link {
       color: map-get($colors, 'wb-white');
@@ -103,6 +115,9 @@
       background-color: map-get($colors, 'link-medium');
       &:hover {
         background-color: lighten(map-get($colors, 'link-medium'), 10%);
+      }
+      &:active {
+        background-color: darken(map-get($colors, 'link-medium'), 10%);
       }
     }
     &:disabled {
