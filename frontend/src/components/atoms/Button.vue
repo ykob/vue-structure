@@ -22,14 +22,10 @@
       const vnode = createElement(
         this.tag,
         {
-          class: {
-            'c-button': true,
-            'c-button--submit' : this.role === 'submit',
-            'c-button--cancel' : this.role === 'cancel',
-            'c-button--warning': this.role === 'warning',
-            'c-button--delete' : this.role === 'delete',
-            'c-button--link'   : this.role === 'link',
-          },
+          class: [
+            'c-button',
+            `c-button--${this.role}`
+          ],
           style: {
             width: this.width,
           },
