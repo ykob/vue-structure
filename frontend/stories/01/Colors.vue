@@ -6,9 +6,9 @@
       return {
         items: [
           {
-            'key-light' : 'Key Color Light',
-            'key-medium': 'Key Color Medium',
-            'key-dark'  : 'Key Color Dark',
+            'prime-light' : 'Primary Color Light',
+            'prime-medium': 'Primary Color Medium',
+            'prime-dark'  : 'Primary Color Dark',
           },
           {
             'text': 'Text Color',
