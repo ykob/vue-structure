@@ -19,14 +19,14 @@
 </script>
 
 <template lang="pug">
-  input.c-input-text(
+  input.input-text(
     type = 'text'
     :class = 'classnames'
     )
 </template>
 
 <style lang="scss">
-  .c-input-text {
+  .input-text {
     height: calc(1.5em + 1em);
     box-sizing: border-box;
     line-height: 1.5;

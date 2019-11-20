@@ -32,22 +32,22 @@
 </script>
 
 <template lang="pug">
-  .c-radio(
+  .radio(
     :is = 'tag'
     :class = 'classnames'
     @click = 'click'
     )
-    .c-radio__icon(
+    .radio__icon(
       :class = 'classnames'
       )
-    .c-radio__label(
+    .radio__label(
       v-if = 'label'
       v-html = 'label'
       )
 </template>
 
 <style lang="scss">
-  .c-radio {
+  .radio {
     cursor: pointer;
     display: flex;
     align-items: center;

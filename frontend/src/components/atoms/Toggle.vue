@@ -24,14 +24,14 @@
 </script>
 
 <template lang="pug">
-  button.c-toggle(
+  button.toggle(
     :class = 'classnames'
     @click = 'click'
     )
 </template>
 
 <style lang="scss">
-  .c-toggle {
+  .toggle {
     width: 48px;
     height: 24px;
     box-sizing: border-box;

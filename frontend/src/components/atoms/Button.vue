@@ -23,8 +23,8 @@
         this.tag,
         {
           class: [
-            'c-button',
-            `c-button--${this.role}`
+            'button',
+            `button--${this.role}`
           ],
           style: {
             width: this.width,
@@ -48,7 +48,7 @@
 </script>
 
 <style lang="scss">
-  .c-button {
+  .button {
     height: 40px;
     box-sizing: border-box;
     cursor: pointer;

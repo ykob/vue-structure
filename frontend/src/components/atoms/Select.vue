@@ -17,7 +17,7 @@
 </script>
 
 <template lang="pug">
-  .c-select
+  .select
     select(
       :name = 'name'
       @change = 'change'
@@ -27,11 +27,11 @@
         :value = 'item.value'
         )
         |{{ item.label }}
-    .c-select__icon
+    .select__icon
 </template>
 
 <style lang="scss">
-  .c-select {
+  .select {
     display: inline-block;
     position: relative;
     select {

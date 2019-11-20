@@ -23,7 +23,7 @@
 </script>
 
 <template lang="pug">
-  textarea.c-textarea(
+  textarea.textarea(
     name = ''
     cols = '40'
     rows = '6'
@@ -33,7 +33,7 @@
 </template>
 
 <style lang="scss">
-  .c-textarea {
+  .textarea {
     box-sizing: border-box;
     line-height: 1.5;
     padding: calc(.5em);

@@ -33,22 +33,22 @@
 </script>
 
 <template lang="pug">
-  .c-checkbox(
+  .checkbox(
     :is = 'tag'
     :class = 'classnames'
     @click = 'click'
     )
-    .c-checkbox__icon(
+    .checkbox__icon(
       :class = 'classnames'
       )
-    .c-checkbox__label(
+    .checkbox__label(
       v-if = 'label'
       v-html = 'label'
       )
 </template>
 
 <style lang="scss">
-  .c-checkbox {
+  .checkbox {
     cursor: pointer;
     display: flex;
     align-items: center;
