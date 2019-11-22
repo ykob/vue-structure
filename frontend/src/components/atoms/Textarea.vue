@@ -10,15 +10,20 @@
       hasError: {
         type: Boolean,
         value: false
-      },
+      }
     },
     computed: {
       classnames: function() {
         return {
-          'has-error': this.hasError === true,
+          'has-error': this.hasError === true
         }
-      },
+      }
     },
+    methods: {
+      onChange(e) {
+        this.$emit('change', e)
+      }
+    }
   };
 </script>
 
@@ -28,6 +33,7 @@
     cols = '40'
     rows = '6'
     :class = 'classnames'
+    @change = 'onChange'
     )
     |{{ value }}
 </template>
